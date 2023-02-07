@@ -1,0 +1,67 @@
+Base Page,Login Page,Test Class, Driver factory
+
+
+
+every page will have its own driver
+thats why private Driver
+
+Template for every page is
+ 1.private driver
+ 2.private By locators(every page will have its own locators)
+ 3.Page constructors to intilize the driver
+  4.page actions.
+ encapsulation private variables being used in public methods
+ classic example of encapsulation.
+ 
+ Driverfactory
+ 1.public Webdriver--this driver will supply driver everywhere
+ 2.initDriver method 
+ 
+ Base Test is parent of all test classes
+ 
+ test class 
+ is to maintain the test cases 
+ what is the purpose of the test method
+ call the method from page class get the data from the method & assert .
+ 
+ flow will start from test & will end in test
+ 
+ 
+ 
+ https://martinfowler.com/bliki/PageObject.html
+ page object martin flower
+ 
+ When you write tests against a web page, 
+ you need to refer to elements within that web page in order to
+ click links and determine what's displayed. However,
+ if you write tests that manipulate the HTML elements directly your
+  tests will be brittle to changes in the UI.
+
+  
+  The basic rule of thumb for a page object is that it should allow a software client
+   to do anything and see anything that a human can. It should also provide an
+    interface that's easy to program to
+   and hides the underlying widgetry in the window. 
+   
+   
+   I favor having no assertions in page objects.(page class)
+    I think you can avoid duplication by providing assertion libraries
+     for common assertions - which can also make it easier to provide good diagnostics. [3]
+
+Page objects are commonly used for testing, 
+but should not make assertions themselves.
+Their responsibility is to provide access to the state 
+of the underlying page(behaviour). 
+It's up to test clients to carry out the assertion logic.
+
+If you have WebDriver APIs(driver methods) driver.findelemnt in your test methods,
+ You're Doing It Wrong. -- Simon Stewart.
+
+Page objects are a classic example of encapsulation - 
+they hide the details of the UI structure and widgetry from other components 
+(the tests). It's a good design principle to look for situations like this 
+as you develop - 
+ask yourself "how can I hide some details from the rest of the software?"
+
+
+   

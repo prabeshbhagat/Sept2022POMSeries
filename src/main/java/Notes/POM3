@@ -1,0 +1,14 @@
+AccountsPageClass_PageChainingModel_ElementUtil
+individual pre condition for account page to land in accounts
+page using login page methods
+
+implement PageChainingModel or Zigzag pattern
+method responsiblity is to return the object of next landing page.
+retrun the obejct of landing page by passing driver
+
+accounts page object is not ready for garbage collector.
+account page will immediately get a reference.
+
+
+
+

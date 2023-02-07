@@ -1,0 +1,22 @@
+Allure is very stable (1000 test case weill also not break) accurate results
+allure there is no backup server closed report gone
+
+Multiple annotations we can add
+annotations can be added in method level & class level
+
+for test classes
+@Epic
+@Desciption
+@Severity
+@Epic
+@Story
+
+for page classes
+@step
+
+add the above annotation only in page & testclasess
+only those we need in report other thing in report is not required'
+
+listeners are heavy interact with each & every test cases
+hence keep any one either extern or allure
+and allaywys delete allure data in folder
