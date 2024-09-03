@@ -19,7 +19,7 @@ public class OptionsManager {
 		co = new ChromeOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println("<--------Running the test in Headless Mode------>");
-			co.setHeadless(true);
+			//co.setHeadless(true);
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			System.out.println("<----Running the test in iNCOGNIto Mode--->>");
@@ -33,7 +33,7 @@ public class OptionsManager {
 		fo = new FirefoxOptions();
 		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println("<--------Running the test in Headless Mode------>");
-			fo.setHeadless(true);
+			//fo.setHeadless(true);
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			System.out.println("<----Running the test in iNCOGNIto Mode--->>");
