@@ -107,7 +107,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<forkCount>3</forkCount>
-					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+					<!--argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine-->
 					<suiteXmlFiles>
 						<!-- 	<suiteXmlFile>src/test/resources/testrunners/testng.xml</suiteXmlFile>
 							-->
